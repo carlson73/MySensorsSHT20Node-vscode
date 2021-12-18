@@ -7,7 +7,7 @@
 #include "main.h"
 
 
-uint32_t sleepingPeriod = 1 * 60 * 1000;  //первое число - минуты
+uint32_t sleepingPeriod = 2 * 60 * 1000;  //первое число - минуты
 uint8_t counterBattery = 0;              
 uint8_t counterBatterySend = 60;          // Интервал отправки батареи и RSSI. 60 раз в час
 float tempThreshold = 0.3;             //  Интервал изменения для отправки    
@@ -46,6 +46,7 @@ void setup() {
     blink(1);
     addDreamPin(PIN_BUTTON, NRF_GPIO_PIN_NOPULL, CDream::NRF_PIN_HIGH_TO_LOW);  // Добавление пробуждения от PIN_BUTTON 
     interruptedSleep.init();
+    SHT_read();
         
 }
 
