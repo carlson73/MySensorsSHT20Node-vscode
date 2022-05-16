@@ -8,10 +8,10 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "e:/my2/Github/MySensorsSHT20Node-vscode/include",
-                "e:/my2/Github/MySensorsSHT20Node-vscode/src",
-                "e:/my2/Github/MySensorsSHT20Node-vscode/.pio/libdeps/nrf52810/DFRobot_SHT20",
-                "e:/my2/Github/MySensorsSHT20Node-vscode/.pio/libdeps/nrf52810/MySensors",
+                "c:/Bin/my2/Github/MySensorsSHT20Node-vscode/include",
+                "c:/Bin/my2/Github/MySensorsSHT20Node-vscode/src",
+                "c:/Bin/my2/Github/MySensorsSHT20Node-vscode/.pio/libdeps/nrf52811/DFRobot_SHT20",
+                "c:/Bin/my2/Github/MySensorsSHT20Node-vscode/.pio/libdeps/nrf52811/MySensors",
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/libraries/SPI",
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/libraries/Wire",
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5",
@@ -19,17 +19,17 @@
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/device",
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/toolchain",
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/toolchain/CMSIS/Include",
-                "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/variants/nRF52810",
+                "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/variants/nRF52811",
                 "C:/Users/oleg/.platformio/packages/tool-unity",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "e:/my2/Github/MySensorsSHT20Node-vscode/include",
-                    "e:/my2/Github/MySensorsSHT20Node-vscode/src",
-                    "e:/my2/Github/MySensorsSHT20Node-vscode/.pio/libdeps/nrf52810/DFRobot_SHT20",
-                    "e:/my2/Github/MySensorsSHT20Node-vscode/.pio/libdeps/nrf52810/MySensors",
+                    "c:/Bin/my2/Github/MySensorsSHT20Node-vscode/include",
+                    "c:/Bin/my2/Github/MySensorsSHT20Node-vscode/src",
+                    "c:/Bin/my2/Github/MySensorsSHT20Node-vscode/.pio/libdeps/nrf52811/DFRobot_SHT20",
+                    "c:/Bin/my2/Github/MySensorsSHT20Node-vscode/.pio/libdeps/nrf52811/MySensors",
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/libraries/SPI",
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/libraries/Wire",
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5",
@@ -37,15 +37,15 @@
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/device",
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/toolchain",
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/toolchain/CMSIS/Include",
-                    "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/variants/nRF52810",
+                    "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/variants/nRF52811",
                     "C:/Users/oleg/.platformio/packages/tool-unity",
                     ""
                 ]
             },
             "defines": [
-                "PLATFORMIO=50204",
-                "ARDUINO_nRF52810",
-                "NRF52810_XXAA",
+                "PLATFORMIO=50205",
+                "ARDUINO_nRF52811",
+                "NRF52811_XXAA",
                 "ARDUINO=10805",
                 "F_CPU=16000000L",
                 "ARDUINO_ARCH_NRF5",
