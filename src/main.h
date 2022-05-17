@@ -5,7 +5,7 @@
 #include <variant.h>
 #include "DFRobot_SHT20.h"
 
-#define MY_NODE_ID 12 //здесь задается id ноды, если необходимо что бы id выдавал гейт, то нужно закомментировать данную строку
+#define MY_NODE_ID 14 //здесь задается id ноды, если необходимо что бы id выдавал гейт, то нужно закомментировать данную строку
 #define MY_RADIO_NRF5_ESB
 
 int16_t myTransportComlpeteMS = 10000;

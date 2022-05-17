@@ -18,7 +18,12 @@ float old_temp;
 float old_hum;
 
 DFRobot_SHT20    sht20;
-
+#define OLD          // Old style plate
+#ifdef OLD
+#define BLUE_LED 14
+#define PIN_WIRE_SDA 28
+#define PIN_WIRE_SCL 25
+#endif
 
 void preHwInit() {
    // pinMode(PIN_BUTTON, INPUT);
