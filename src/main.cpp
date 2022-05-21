@@ -6,7 +6,8 @@
 
 #include "main.h"
 
-
+bool check = false;   // Confirmation send
+bool button_state = true;   // Button state
 uint32_t sleepingPeriod = 2 * 60 * 1000;  //первое число - минуты
 uint8_t counterBattery = 0;              
 uint8_t counterBatterySend = 60;          // Интервал отправки батареи и RSSI. 60 раз в час
@@ -16,6 +17,7 @@ float temp;
 float hum;
 float old_temp;
 float old_hum;
+const uint8_t shortWait = 40;
 
 DFRobot_SHT20    sht20;
 // #define OLD          // Old style plate
@@ -72,7 +74,7 @@ void loop() {
     }
 
     if (PIN_BUTTON) {  // Заглушка на обработку кнопки
-        blink(3);
+        BUTTON_send();
     }
 
     
@@ -139,3 +141,23 @@ void SHT_send() {
     }
 
 }
+
+void BUTTON_send()  {         // Send Button status with confirmations 
+  check = send(sendButtonMsg.setDestination(0).set(button_state, 1));
+  if (!check) {
+    _transportSM.failedUplinkTransmissions = 0;
+    wait(shortWait * 4);
+    check = send(sendButtonMsg.setDestination(0).set(button_state, 1));
+    if (!check) {
+      wait(shortWait * 8);
+      _transportSM.failedUplinkTransmissions = 0;
+      check = send(sendButtonMsg.setDestination(0).set(button_state, 1));
+      wait(shortWait * 2);
+    }
+    blink(5);    // Error transmit           
+}  else {
+    blink(2);  // Succsess transmit
+    button_state = !button_state;
+    }
+}
+

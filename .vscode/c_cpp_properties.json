@@ -20,7 +20,6 @@
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/toolchain",
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/toolchain/CMSIS/Include",
                 "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/variants/nRF52811",
-                "C:/Users/oleg/.platformio/packages/tool-unity",
                 ""
             ],
             "browse": {
@@ -38,12 +37,11 @@
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/toolchain",
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/cores/nRF5/SDK/components/toolchain/CMSIS/Include",
                     "C:/Users/oleg/.platformio/packages/framework-arduinonordicnrf5/variants/nRF52811",
-                    "C:/Users/oleg/.platformio/packages/tool-unity",
                     ""
                 ]
             },
             "defines": [
-                "PLATFORMIO=50205",
+                "PLATFORMIO=60001",
                 "ARDUINO_nRF52811",
                 "NRF52811_XXAA",
                 "ARDUINO=10805",

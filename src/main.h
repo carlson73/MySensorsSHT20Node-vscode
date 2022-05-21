@@ -15,9 +15,10 @@ int16_t myTransportComlpeteMS = 10000;
 #define CHILD_ID_TEMP 0
 #define CHILD_ID_HUM 1
 #define MY_SEND_RSSI 100
-#define MY_SEND_BATTERY 101
+#define MY_SEND_BATTERY 99
 #define MY_SEND_RESET_REASON 105
 #define MY_RESET_REASON_TEXT
+#define BUTTON_S_ID 11
 
 
 #define CHILD_ID_VIRT 3   // Нужна виртуальная нода для работы библиотеки
@@ -30,12 +31,16 @@ int16_t myTransportComlpeteMS = 10000;
 MyMessage msgTemp(CHILD_ID_TEMP, V_TEMP);
 MyMessage msgHum(CHILD_ID_HUM, V_HUM);
 MyMessage msgVirt(CHILD_ID_VIRT, V_VAR);
+MyMessage sendButtonMsg(BUTTON_S_ID, V_VAR1);
 
 CHappyNode happyNode(100); // Адрес c которого будут храниться пользовательские данные
 CDream interruptedSleep(1);  // Добавление пробуждения от пин. В (n) n - количество пинов от которых пробуждается (описывается в setup)
 
 extern DFRobot_SHT20    sht20;
+extern bool button_state;
+extern bool check;
 
 void SHT_read();
 void blink (uint8_t flash);
 void SHT_send();
+void BUTTON_send();
