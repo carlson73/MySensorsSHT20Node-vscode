@@ -41,7 +41,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=60001",
+                "PLATFORMIO=60002",
                 "ARDUINO_nRF52811",
                 "NRF52811_XXAA",
                 "ARDUINO=10805",
