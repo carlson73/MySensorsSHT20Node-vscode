@@ -253,7 +253,8 @@ bool CHappyNode::sendBattery(int16_t sensorID){
     bool result = true;
     
     uint16_t batteryVoltage = hwCPUVoltage();
-    if (prevBatteryVoltage != batteryVoltage){
+  //  if (prevBatteryVoltage != batteryVoltage){
+    if (((int)abs(prevBatteryVoltage - batteryVoltage))> 1) {
         prevBatteryVoltage = batteryVoltage;
         result = sendBatteryLevel(battery_level_in_percent(batteryVoltage), true);
         if (getParentNodeId() != 0){
